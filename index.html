@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>陈叶澎我喜欢你陈叶澎我喜欢你陈叶澎我喜欢你陈叶澎我喜欢你陈叶澎我喜欢你陈叶澎我喜欢你陈叶澎我喜欢你陈叶澎我喜欢你陈叶澎我喜欢你陈叶澎我喜欢你陈叶澎我喜欢你</title>
+		<style>
+			body{
+				/* 默认铺满，灰底 */
+				margin: 0;
+				height: 120vh;
+				background-color: #000000; 
+			}
+			.hei{
+				background-color: #000000; 
+			}
+			/* *{
+				border: 1px solid black;
+			} */
+			.flex{
+				/* 给body一个弹性布局 */
+				display: flex;
+			}
+			.baiSe{
+				/* 左边栏白底好点 */
+				background-color: white;
+			}
+			.flex1{
+				/* 主区域默认铺满吧 */
+				flex: 1;
+				position: relative;
+			}
+			.column{
+				/* 竖着的结构？反正是主区域的 */
+				flex-direction: column;
+			}
+			.mg8{
+				margin: 8px;
+			}
+			.mgr8{
+				margin-right: 8px;
+			}
+			.mgt8{
+				margin-top:8px;
+			}
+			.mgt100{
+				margin-top:80px;
+			}
+			.YinYing{
+				/* 主打一个层次感，阴影随便加点 */
+				box-shadow: 1px 1px 2px;
+			}
+			.daoHang{
+				padding: 20px 120px;
+				border-bottom: 1px solid black;
+				font-size: 15px;
+				color: white;
+			}
+			.chaolianjie a{
+				color: black;
+				text-decoration: none;
+				display: block;
+			
+			}
+			.chaolianjie div:hover{
+				background-color: orange;
+				
+			}
+			.zi div:hover{
+				background-color: black;
+			}
+			.lanSe{
+				background-color: #272727;
+			}
+			.lanSe1{
+				background-color: #1e1e1e;
+			}
+			.box{
+				width: 120px;
+				height: 140px;
+			
+			}
+			.box1{
+				width: 160px;
+				height: 140px;
+			
+			}
+			.tu{
+				padding-bottom: 1%;
+				width: 100%;
+				position: relative;
+			}
+			.yumi{
+				position: relative;
+				padding-bottom: 56.25%;
+				height: 100px;
+				width: 100%;
+			}
+			.yumi1 img{
+				display: block;
+				width: 100%;
+				height: auto;
+				object-fit: cover;
+			}
+			.yumi1 .zii{
+				position: absolute;
+				bottom: 5px;
+				right: 5px;
+				font-size: 1rem;
+				background: rgba(0, 0, 0, 0.5);
+				color: #fff;
+				padding: 2px 4px;
+				border-radius: 3px;
+				font-size: 1vw;
+			}
+			.img_src img{
+				position: absolute;
+				width: auto;
+				height: 100%;
+				object-fit: cover;
+				display: block;
+			}
+			.huise{
+				background-color: #2a2828;
+			}
+			/* fuzhi  */
+			.p-1 {
+			  padding: 0.25rem;
+			}
+			.justify-self-end {
+			  -ms-grid-column-align: end;
+			  justify-self: end;
+			}
+			.self-end {
+			  -ms-flex-item-align: end;
+			  -webkit-align-self: flex-end;
+			  align-self: flex-end;
+			}
+			.z-10 {
+			    z-index: 10;
+			}
+			.inset-0 {
+			    top: 0;
+			    right: 0;
+			    bottom: 0;
+			    left: 0;
+			}
+			.absolute {
+			    position: absolute;
+			}
+			.grid {
+			    display: -ms-grid;
+			    display: grid
+			;
+			}
+			.boxx{
+				width: 100%;
+				aspect-ratio: 9/16;
+				
+			}
+			.video img{
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			}
+			.video{
+				
+				width: 100%;
+				aspect-ratio: 16/9;
+				
+			}
+			.title{
+				font-size: 2vw;
+			}
+			.video-info{
+				display: flex;
+				align-items: flex-start;
+			}
+			.video-title{
+			display: inline-block;
+			font-size: 1.2em;
+			padding: 0.4em 0.8em;
+			background-color: rgba(0, 0, 0, 0.5);
+			color: #fff;
+			
+			
+			overflow: hidden;
+			text-overflow: ellipsis;
+			max-width: 100%;
+			}
+			.border-t-1 {
+			border-top: 2px dashed orange;
+			}
+			
+			
+			.text-white {
+			    --tw-text-opacity: 1;
+			    color: rgba(255, 255, 255, var(--tw-text-opacity));
+			}
+			.p-2 {
+			    padding: .5rem;
+			}
+			.rounded {
+			    border-radius: .25rem;
+			}
+			.bg-dark {
+			    --tw-bg-opacity: 1;
+			    background-color: rgba(37, 37, 37, var(--tw-bg-opacity));
+			}
+		</style>
+	</head>
+	<body class="flex">
+		<!--第一层左侧边栏-->
+		<div style=" width: 300px;z-index: 2;" class="huise YinYing">
+			<!-- 头像栏，横向flex结构 -->
+			<div style="background-color: #272727; border: 1px solid black;padding: 10px;align-items: center;justify-content: center;" class="flex">
+				<img src="hub.png" alt="陈叶澎" height="80px" width="253px">
+				
+			</div>
+			<!-- 导航条 -->
+			<div class="flex1 chaolianjie lanSe">
+				<a href="#"><div class="daoHang">关于我们</div></a>
+				<a href="#"><div class="daoHang">主营业务</div></a>
+				<a href="#"><div class="daoHang">在线留言</div></a>
+				
+			</div>
+		</div>
+		<!--第一层主区域-->
+		<div class="flex1 flex column">
+			
+		
+		<!-- 第二层顶栏 -->
+		<div style="height: 100px;z-index: 1;justify-content: space-between;" class="lanSe1 YinYing flex ">
+			<div class="box1 flex" style="align-items: center;justify-content: center;">
+				<img src="1212.png" height="30px" style="margin-left: 10px;margin-bottom: 40px;">
+					<div style="color: white;margin-left: 10px;font-size: 20px;margin-bottom: 40px;">
+						概览
+					</div>
+			</div>
+			<div style="color: #939393;font-size: 50px;padding-top: 20px;font-size: 3vw;">
+				全球最大的玉米分享平台
+			</div>
+			<div class="box flex"style="align-items: center;justify-content: space-between;">
+				<img src="d2.png" height="30px" style="margin-bottom: 40px;">
+					<div style="font-size: 20px;color: white;margin-right: 10px;margin-bottom: 40px;">
+						第七组
+					</div>
+			</div>
+
+
+		</div>
+			<div class="flex column mg8">
+				<!-- 提示区域 -->
+				<div class="flex">
+					<!-- 四个盒子 -->
+					<div style="height: 100px;" class=" lanSe YinYing tu img_src video">
+						<img src="./1111.png" alt="" />
+					</div>
+				<!-- 	<div style="height: 50px;" class="flex1 mgr8 baiSe"></div>
+					<div style="height: 50px;" class="flex1 mgr8 baiSe"></div> -->
+				</div>
+				<div style="color: #fff;font-size: 30px;justify-content: space-between;" class="flex">
+					<div>世界各地的热门玉米视频非常好的视频使我的玉米旋转</div>
+					<div>
+						<form action="/search">
+							<input type="text" class="text-white bg-dark p-2 rounded focus:border-1 focus:border-primary" placeholder="搜了也没用的搜索栏" name="q" minlength="1" required="" value="">
+						</form>
+					</div>
+				</div>
+				
+				<!-- 消息区域 -->
+				<div class="flex column">
+					<!-- 3个列表 -->
+					<div class="flex ">
+						<div class="mgr8 flex1 hei YinYing mgt8 video yumi1 ">
+							
+							<span class="zii" style="z-index: 10;">HD 00:13</span>
+							<a href="https://www.bilibili.com/video/BV1GJ411x7h7?spm_id_from=333.788.recommend_more_video.0&vd_source=1ec68958dd3343522e7e0369155fc212">
+							<img src="./hq.jpg" alt="" / class="c" >
+						
+						   
+							</a>
+						</div>
+						<div class="mgr8 flex1 hei YinYing mgt8 video yumi1">
+							
+							<span class="zii" style="z-index: 10;">HD 00:34</span>
+							<a href="https://www.bilibili.com/video/BV1Qk4y1e7je/?spm_id_from=333.337.search-card.all.click&vd_source=1ec68958dd3343522e7e0369155fc212"><img src="./hq1.jpg" alt="" / class="" >
+							</a>
+						</div>
+						<div class="mgr8 flex1 hei YinYing mgt8 video yumi1">
+							
+							<span class="zii" style="z-index: 10;">HD 00:32</span>
+							<a href="https://www.bilibili.com/video/BV1ps421g7bw/?spm_id_from=333.337.search-card.all.click&vd_source=1ec68958dd3343522e7e0369155fc212">
+								<img src="./hq2.jpg" alt="" / class="" >
+							</a>
+						</div>
+						<div class="mgr8 flex1 hei YinYing mgt8 video yumi1">
+							
+							<span class="zii" style="z-index: 10;">HD 00:12</span>
+							<a href="https://www.bilibili.com/video/BV1ox4y1e71S/?spm_id_from=333.337.search-card.all.click&vd_source=1ec68958dd3343522e7e0369155fc212">
+								<img src="./hq3.jpg" alt="" / class="" >
+							</a>
+						</div>
+					</div>
+					<div class="flex">
+						
+						<div style="height: 60px;" class="mgr8 flex1 hei YinYing "><a href="https://www.bilibili.com/video/BV1z1skezEHX/?spm_id_from=333.1387.list.card_archive.click">
+							<h1 style="font-size: 0.8vw;color: white;padding: 0;margin-top:0">Kernels get messy in a mass popping event</h1>
+							<div class="flex">
+							<img src="./verified.svg" width="14" height="14"  alt="Verified Badge" style="padding: 0;margin-top:0">
+							<h2 style="font-size: 0.8vw;color: #94A3B8;margin: 0;padding-left: 5px;margin-top:0">CVideos</h2>
+							</div>
+							<div class="flex">
+								<h1 class="" style="font-size: 0.7vw;color: #94A3B8;padding: 0;margin-top:0;margin-left: 3px;margin-right: 5px;">70.9k次观看 </h1>
+								<img src="https://cornhub.objectdepot.net/static/icons/like.svg" alt="" / width="12" height="12" style="margin-top: 2px;">
+								<h1 class="" style="font-size: 0.7vw;color: #94A3B8;padding: 0;margin-top:0;margin-left: 3px;">98% </h1>
+							</div>
+							</a>
+						</div>
+						<div style="height: 60px;" class="mgr8 flex1 hei YinYing "><a href="https://www.bilibili.com/video/BV1z1skezEHX/?spm_id_from=333.1387.list.card_archive.click">
+							<h1 style="font-size: 0.8vw;color: white;padding: 0;margin-top:0">cornstars get tricked into a 3 way</h1>
+							<div class="flex">
+							<img src="./staff.svg" width="14" height="14"  alt="Verified Badge" style="padding: 0;margin-top:0">
+							<h2 style="font-size: 0.8vw;color: #94A3B8;margin: 0;padding-left: 5px;margin-top:0">Gijs</h2>
+							</div>
+							<div class="flex">
+								<h1 class="" style="font-size: 0.7vw;color: #94A3B8;padding: 0;margin-top:0;margin-left: 3px;margin-right: 5px;">70.9k次观看 </h1>
+								<img src="https://cornhub.objectdepot.net/static/icons/like.svg" alt="" / width="12" height="12" style="margin-top: 2px;">
+								<h1 class="" style="font-size: 0.7vw;color: #94A3B8;padding: 0;margin-top:0;margin-left: 3px;">98% </h1>
+							</div>
+							</a>
+						</div>
+						<div style="height: 60px;" class="mgr8 flex1 hei YinYing "><a href="https://www.bilibili.com/video/BV1z1skezEHX/?spm_id_from=333.1387.list.card_archive.click">
+							<h1 style="font-size: 0.8vw;color: white;padding: 0;margin-top:0">Beautiful young cobs lay in the sun</h1>
+							<div class="flex">
+							<img src="./verified.svg" width="14" height="14"  alt="Verified Badge" style="padding: 0;margin-top:0">
+							<h2 style="font-size: 0.8vw;color: #94A3B8;margin: 0;padding-left: 5px;margin-top:0;">Cobbers</h2>
+							</div>
+							<div class="flex">
+								<h1 class="" style="font-size: 0.7vw;color: #94A3B8;padding: 0;margin-top:0;margin-left: 3px;margin-right: 5px;">70.9k次观看 </h1>
+								<img src="https://cornhub.objectdepot.net/static/icons/like.svg" alt="" / width="12" height="12" style="margin-top: 2px;">
+								<h1 class="" style="font-size: 0.7vw;color: #94A3B8;padding: 0;margin-top:0;margin-left: 3px;">98% </h1>
+							</div>
+							</a>
+						</div>
+						<div style="height: 60px;" class=" flex1 hei YinYing "><a href="https://www.bilibili.com/video/BV1z1skezEHX/?spm_id_from=333.1387.list.card_archive.click">
+							<h1 style="font-size: 0.8vw;color: white;padding: 0;margin-top:0">FRESH COBS: STRAIGHT FROM THE FARM</h1>
+							<div class="flex">
+							<img src="./verified.svg" width="14" height="14"  alt="Verified Badge" style="padding: 0;">
+							<h2 style="font-size: 0.8vw;color: #94A3B8;margin: 0;padding-left: 5px;margin-top:0">Buttered Cob</h2>
+							</div>
+							<div class="flex">
+								<h1 class="" style="font-size: 0.7vw;color: #94A3B8;padding: 0;margin-top:0;margin-left: 3px;margin-right: 5px;">70.9k次观看 </h1>
+								<img src="https://cornhub.objectdepot.net/static/icons/like.svg" alt="" / width="12" height="12" style="margin-top: 2px;">
+								<h1 class="" style="font-size: 0.7vw;color: #94A3B8;padding: 0;margin-top:0;margin-left: 3px;">98% </h1>
+							</div>
+						</div>
+						</a>
+					</div>
+					<div class="flex">
+						<div class="mgr8 flex1 hei YinYing mgt8 video yumi1">
+							
+							<span class="zii" style="z-index: 10;">HD 00:44</span>
+							<a href="https://www.bilibili.com/video/BV1ox4y1e71S/?spm_id_from=333.337.search-card.all.click&vd_source=1ec68958dd3343522e7e0369155fc212">
+								<img src="./hq5.jpg" alt="" / class="" >
+							</a>
+						</div>
+						<div class="mgr8 flex1 hei YinYing mgt8 video yumi1">
+							
+							<span class="zii" style="z-index: 10;">HD 00:12</span>
+							<a href="https://www.bilibili.com/video/BV1ox4y1e71S/?spm_id_from=333.337.search-card.all.click&vd_source=1ec68958dd3343522e7e0369155fc212">
+								<img src="./hq6.jpg" alt="" / class="" >
+							</a>
+						</div>
+						<div class="mgr8 flex1 hei YinYing mgt8 video yumi1">
+							
+							<span class="zii" style="z-index: 10;">HD 00:43</span>
+							<a href="https://www.bilibili.com/video/BV1ox4y1e71S/?spm_id_from=333.337.search-card.all.click&vd_source=1ec68958dd3343522e7e0369155fc212">
+								<img src="./hq7.jpg" alt="" / class="" >
+							</a>
+						</div>
+						<div class="mgr8 flex1 hei YinYing mgt8 video yumi1">
+							
+							<span class="zii" style="z-index: 10;">HD 00:11</span>
+							<a href="https://www.bilibili.com/video/BV1ox4y1e71S/?spm_id_from=333.337.search-card.all.click&vd_source=1ec68958dd3343522e7e0369155fc212">
+								<img src="./hq8.jpg" alt="" / class="" >
+							</a>
+						</div>
+					</div>
+					<div class="flex">
+						<div style="height: 60px;" class="mgr8 flex1 hei YinYing "><a href="https://www.bilibili.com/video/BV1z1skezEHX/?spm_id_from=333.1387.list.card_archive.click">
+							<h1 style="font-size: 0.8vw;color: white;padding: 0;margin-top: 0;">Corn Gets Grilled and Passionately Buttered</h1>
+							<div class="flex">
+							<img src="./verified.svg" width="14" height="14"  alt="Verified Badge" style="padding: 0;">
+							<h2 style="font-size: 0.8vw;color: #94A3B8;margin: 0;padding-left: 5px;margin-top: 0;">POPPED</h2>
+							</div>
+							<div class="flex">
+								<h1 class="" style="font-size: 0.7vw;color: #94A3B8;padding: 0;margin-top:0;margin-left: 3px;margin-right: 5px;">70.9k次观看 </h1>
+								<img src="https://cornhub.objectdepot.net/static/icons/like.svg" alt="" / width="12" height="12" style="margin-top: 2px;">
+								<h1 class="" style="font-size: 0.7vw;color: #94A3B8;padding: 0;margin-top:0;margin-left: 3px;">98% </h1>
+							</div>
+							</a>
+						</div>
+						<div style="height: 60px;" class="mgr8 flex1 hei YinYing "><a href="https://www.bilibili.com/video/BV1z1skezEHX/?spm_id_from=333.1387.list.card_archive.click">
+							<h1 style="font-size: 0.8vw;color: white;padding: 0;margin-top: 0;">young cobs left OUTSIDE ALONE</h1>
+							<div class="flex">
+							<img src="./staff.svg" width="14" height="14"  alt="Verified Badge" style="padding: 0;">
+							<h2 style="font-size: 0.8vw;color: #94A3B8;margin: 0;padding-left: 5px;margin-top: 0;">YEDBED</h2>
+							</div>
+							<div class="flex">
+								<h1 class="" style="font-size: 0.7vw;color: #94A3B8;padding: 0;margin-top:0;margin-left: 3px;margin-right: 5px;">70.9k次观看 </h1>
+								<img src="https://cornhub.objectdepot.net/static/icons/like.svg" alt="" / width="12" height="12" style="margin-top: 2px;">
+								<h1 class="" style="font-size: 0.7vw;color: #94A3B8;padding: 0;margin-top:0;margin-left: 3px;">98% </h1>
+							</div>
+							</a>
+						</div>
+						<div style="height: 60px;" class="mgr8 flex1 hei YinYing "><a href="https://www.bilibili.com/video/BV1z1skezEHX/?spm_id_from=333.1387.list.card_archive.click">
+							<h1 style="font-size: 0.8vw;color: white;padding: 0;margin-top: 0;">corn gets hot while girlfriend is being buttered</h1>
+							<div class="flex">
+							<img src="./verified.svg" width="14" height="14"  alt="Verified Badge" style="padding: 0;">
+							<h2 style="font-size: 0.8vw;color: #94A3B8;margin: 0;padding-left: 5px;margin-top: 0;">Cobbers</h2>
+							</div>
+							<div class="flex">
+								<h1 class="" style="font-size: 0.7vw;color: #94A3B8;padding: 0;margin-top:0;margin-left: 3px;margin-right: 5px;">70.9k次观看 </h1>
+								<img src="https://cornhub.objectdepot.net/static/icons/like.svg" alt="" / width="12" height="12" style="margin-top: 2px;">
+								<h1 class="" style="font-size: 0.7vw;color: #94A3B8;padding: 0;margin-top:0;margin-left: 3px;">98% </h1>
+							</div>
+							</a>
+						</div>
+						<div style="height: 60px;" class=" flex1 hei YinYing "><a href="https://www.bilibili.com/video/BV1z1skezEHX/?spm_id_from=333.1387.list.card_archive.click">
+							
+							<h1 class="" style="font-size: 0.8vw;color: white;padding: 0;margin-top: 0;">big truck shoots corny seeds in corntainer </h1>
+							
+							<div class="flex">
+							<img src="./verified.svg" width="14" height="14"  alt="Verified Badge" style="padding: 0;">
+							<h2 style="font-size: 0.8vw;color: #94A3B8;margin: 0;padding-left: 5px;margin-top: 0;">Bobcob</h2>
+							</div>
+							<div class="flex">
+								<h1 class="" style="font-size: 0.7vw;color: #94A3B8;padding: 0;margin-top:0;margin-left: 3px;margin-right: 5px;">70.9k次观看 </h1>
+								<img src="https://cornhub.objectdepot.net/static/icons/like.svg" alt="" / width="12" height="12" style="margin-top: 2px;">
+								<h1 class="" style="font-size: 0.7vw;color: #94A3B8;padding: 0;margin-top:0;margin-left: 3px;">98% </h1>
+							</div>
+							</a>
+						</div>
+	
+				</div>
+				
+			</div>
+			<div class="flex">
+				<!-- 四个盒子 -->
+				<div style="height: 100px;" class=" lanSe YinYing tu img_src video">
+					<img src="./f88466c3-9e28-4a8e-8c15-17a1865e7f96.gif"" />
+				</div>
+			<!-- 	<div style="height: 50px;" class="flex1 mgr8 baiSe"></div>
+				<div style="height: 50px;" class="flex1 mgr8 baiSe"></div> -->
+			</div>
+			<!-- 右 -->
+			<!-- <div style="flex: 1;" class="flex column mgr8 mgt8"> -->
+				<!-- 提示区域 -->
+				<div style="height: 200px;" class="lanSe YinYing border-t-1 mgt8">
+					<h5 style="color: #939393;text-align: center;margin:15px;">
+						CornHub 团队每天都在更新和添加更多玉米视频。这里都是 100% 免费的玉米。
+						</h5>
+						<h5 style="color: #939393;text-align: center;margin:15px;">
+							我们有大量的免费 CCC 视频选择，您可以下载或流式传输。CornHub 是最完整和最具革命性的玉米管网站。
+							</h5>
+						<h5 style="color: #939393;text-align: center;margin:15px;">
+								我们提供流媒体玉米视频、CCC 相册和网络上排名第一的免费流行社区。我们一直在努力添加更多功能，让您对 corno 的热爱永存不息。
+							</h5>
+							<h5 style="color: #939393;text-align: center;margin:15px;">
+									如果您有任何问题/评论，请向我们发送反馈。<a href="https://ccy-p.github.io/re01/"><div class="daoHang">点此联系站长，灌注站长谢谢喵</div></a>
+								</h5>
+									
+				</div>
+						
+						
+				<!-- 消息区域 -->
+				<!-- <div style="height: 300px;" class="baiSe YinYing mgt8"> -->
+					
+				<!-- </div> -->
+				
+			<!-- </div> -->
+		</div>
+		
+	</body>
+</html>
